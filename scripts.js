@@ -1,7 +1,6 @@
 let userInput;
-userInput = prompt("What do you want to have for dinner?", "Type your answer here.");
-if ( userInput === "burrito" ) {
-  $("#response").html("Brilliant choice!");
-} else {
-  $("#response").html("Don't your want a burrito?");
-}
+userInput = prompt ("Think of a number", "Type your stupid answer here");
+for (let i = 1; i <= userInput; i = i + 1) if (i % 2 !== 0) {
+  $("#response").append("<br />" + i + " is odd "); } else {
+    $("#response").append("<br />" + i + " is even ");
+  }
